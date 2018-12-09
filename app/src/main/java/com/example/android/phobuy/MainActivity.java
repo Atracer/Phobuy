@@ -287,7 +287,6 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
 
         @Override
         public void onSurfaceTextureSizeChanged(SurfaceTexture surfaceTexture, int i, int i1) {
-
         }
 
         @Override
