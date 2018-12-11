@@ -96,4 +96,5 @@ public class SecondActivity extends AppCompatActivity implements GestureDetector
         gestureDetector.onTouchEvent(event);
         return super.onTouchEvent(event);
     }
+
 }
