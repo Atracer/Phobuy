@@ -16,10 +16,10 @@ public class SecondActivity extends AppCompatActivity implements GestureDetector
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        // for swipe right.
+        // for swipe right
         gestureDetector = new GestureDetector(this);
     }
-    // helper function for swipe-right.
+    // for swipe right.
     @Override
     public boolean onDown(MotionEvent e) {
         return false;
@@ -96,5 +96,4 @@ public class SecondActivity extends AppCompatActivity implements GestureDetector
         gestureDetector.onTouchEvent(event);
         return super.onTouchEvent(event);
     }
-
 }
