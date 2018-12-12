@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
 
     private Button btnCapture;
     private TextureView textureView;
-    private Button button_go;
 
     //Check State orientation of output image
     private static final SparseIntArray ORIENTATIONS = new SparseIntArray();
@@ -100,16 +99,6 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
 
         // for swipe left
         gestureDetector = new GestureDetector(this);
-
-        // go to 2
-        button_go = (Button)findViewById(R.id.button_goto);
-        button_go.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                startActivity(intent);
-            }
-        });
 
         // for the camera
         textureView = (TextureView)findViewById(R.id.textureView_Camera);
