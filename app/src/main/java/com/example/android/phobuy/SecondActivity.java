@@ -222,7 +222,7 @@ public class SecondActivity extends AppCompatActivity implements GestureDetector
 
     private void onSwipeRight() {
         Toast.makeText(this, "Swipe Left to Search", Toast.LENGTH_LONG).show();
-        Intent startIntent = new Intent(getApplicationContext(), SecondActivity.class);
+        Intent startIntent = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(startIntent);
     }
 
