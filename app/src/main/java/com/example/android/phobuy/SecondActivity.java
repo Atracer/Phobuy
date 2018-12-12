@@ -46,7 +46,7 @@ public class SecondActivity extends AppCompatActivity implements GestureDetector
 
         if(currentApiVersion >=  Build.VERSION_CODES.O_MR1) {
             if (checkPermission()) {
-                Toast.makeText(getApplicationContext(), "Permission already granted!", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), "", Toast.LENGTH_LONG).show();
             } else {
                 requestPermission();
             }
@@ -221,7 +221,7 @@ public class SecondActivity extends AppCompatActivity implements GestureDetector
     }
 
     private void onSwipeRight() {
-        Toast.makeText(this, "Swipe Left to Search", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Swipe Left to Scan Barcode", Toast.LENGTH_LONG).show();
         Intent startIntent = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(startIntent);
     }

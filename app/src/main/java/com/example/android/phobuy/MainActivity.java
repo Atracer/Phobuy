@@ -273,7 +273,6 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
                 return;
             }
             manager.openCamera(cameraId,stateCallback,null);
-
         } catch (CameraAccessException e) {
             e.printStackTrace();
         }
